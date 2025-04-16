@@ -18,20 +18,37 @@ int main() {
     printf("Preencha as informações abaixo\n\n");
     printf("ESTADO (A a H): ");
     scanf(" %c", &estado_01);
-    printf("CODIGO DA CIDADE (Ex. A01,B03): ");
+    printf("CÓDIGO DA CIDADE (Ex. A01, B03): ");
     scanf("%s", codigo_01);
-    printf("CIDADE (Ex. Sao Paulo): ");    
+    printf("CIDADE (Ex. São Paulo): ");    
     scanf(" %[^\n]s", cidade_01); // Lê até a quebra de linha, incluindo espaços
-    printf("POPULACAO: ");
+    printf("POPULAÇÃO: ");
     scanf("%d", &populacao_01);
-    printf("AREA (km²): ");
+    printf("ÁREA (km²): ");
     scanf("%f", &area_01);	
     printf("PIB (R$): ");
     scanf("%f", &pib_01);
-    printf("Nº DE PONTOS TURISTICOS: ");
+    printf("Nº DE PONTOS TURÍSTICOS: ");
     scanf("%d", &pontos_turisticos_01);
 
+    // Cadastro da Carta 2
 
+    printf("\nCADASTRO DA CARTA 2:\n\n");
+    printf("Preencha as informações abaixo\n\n");
+    printf("ESTADO (A a H): ");
+    scanf(" %c", &estado_02);
+    printf("CÓDIGO DA CIDADE (Ex. A01, B03): ");
+    scanf("%s", codigo_02);
+    printf("CIDADE (Ex. São Paulo): ");    
+    scanf(" %[^\n]s", cidade_02); // Lê até a quebra de linha, incluindo espaços
+    printf("POPULAÇÃO: ");
+    scanf("%d", &populacao_02);
+    printf("ÁREA (km²): ");
+    scanf("%f", &area_02);	
+    printf("PIB (R$): ");
+    scanf("%f", &pib_02);
+    printf("Nº DE PONTOS TURÍSTICOS: ");
+    scanf("%d", &pontos_turisticos_02);
     
     
     // Exibição dos Dados das Cartas:
