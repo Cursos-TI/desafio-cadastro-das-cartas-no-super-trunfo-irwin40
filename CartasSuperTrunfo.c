@@ -51,17 +51,17 @@ int main() {
     scanf("%f", &pib_02);
     printf("Nº DE PONTOS TURÍSTICOS: ");
     scanf("%d", &pontos_turisticos_02);
-    printf("\n--------------------------------------\n");
+    printf("\n\n--------------------------------------\n");
     
     
     // Exibição dos Dados das Cartas:
-    printf("\n-- CARTAS CADASTRADAS --\n\n-- CARTA 1 --\n");
+    printf("\n-- CARTAS CADASTRADAS --\n\n- CARTA 1 -\n\n");
     printf("Estado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %2f km²\nPIB: R$ %2f\nNúmero de Pontos Turísticos: \
-%d\n--------------------------------------\n\n", estado_01, codigo_01, cidade_01, populacao_01, area_01, pib_01, pontos_turisticos_01);
+%d\n\n--------------------------------------\n\n", estado_01, codigo_01, cidade_01, populacao_01, area_01, pib_01, pontos_turisticos_01);
     
-    printf("-- CARTA 2 --\n");
+    printf("- CARTA 2 -\n\n");
     printf("Estado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %2f km²\nPIB: R$ %2f\nNúmero de Pontos Turísticos: \
-%d\n--------------------------------------\n\n", estado_02, codigo_02, cidade_02, populacao_02, area_02, pib_02, pontos_turisticos_02);
+%d\n\n--------------------------------------\n\n", estado_02, codigo_02, cidade_02, populacao_02, area_02, pib_02, pontos_turisticos_02);
 
     
     return 0;
