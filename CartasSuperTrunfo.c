@@ -12,6 +12,8 @@ int main() {
     int pontos_turisticos_01, pontos_turisticos_02;
     unsigned long int populacao_01, populacao_02;
     float area_01, pib_01, area_02, pib_02, densidade_01, densidade_02, pib_per_capita_01, pib_per_capita_02, super_poder_01, super_poder_02;
+    int resultado_comparacao_populacao, resultado_comparacao_area, resultado_comparacao_pib, resultado_comparacao_pontos_turisticos,\
+    resultado_comparacao_super_poder, resultado_comparacao_densidade, resultado_comparacao_pib_per_capita;
 
     
     // Cadastro das Carta 1
@@ -65,6 +67,15 @@ int main() {
     super_poder_01 = ((float) populacao_01 + area_01 + pib_01 + (float) pontos_turisticos_01 + pib_per_capita_01 + 1/ densidade_01); // Super Poder da Carta 1
     super_poder_02 = ((float) populacao_02 + area_02 + pib_02 + (float) pontos_turisticos_02 + pib_per_capita_02 + 1/ densidade_02); // Super Poder da Carta 2
 
+    // Comparação das cartas
+    resultado_comparacao_populacao = (populacao_01 > populacao_02);
+    resultado_comparacao_area = (area_01 > area_02);
+    resultado_comparacao_pib = (pib_01 > pib_02);
+    resultado_comparacao_pontos_turisticos = (pontos_turisticos_01 > pontos_turisticos_02);
+    resultado_comparacao_super_poder = (super_poder_01 > super_poder_02);
+    resultado_comparacao_densidade = (densidade_01 < densidade_02);
+    resultado_comparacao_pib_per_capita = (pib_per_capita_01 > pib_per_capita_02);
+    
 
     // Exibição dos Dados das Cartas:
     
@@ -78,6 +89,16 @@ int main() {
 %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: R$ %.2f\nSuper Poder: %.2f\n\n--------------------------------------\n\n", estado_02, codigo_02,\
  cidade_02, populacao_02, area_02, pib_02, pontos_turisticos_02, densidade_02, pib_per_capita_02, super_poder_02);
 
+    // Exibição do Resultado da Comparação das Cartas
+
+    printf("-- RESULTADO --\n\nPopulação: %s venceu %s (%d)\n", cidade_01, cidade_02, resultado_comparacao_populacao);
+    printf("Área: %s venceu %s (%d)\n", cidade_01, cidade_02, resultado_comparacao_area);
+    printf("PIB: %s venceu %s (%d)\n", cidade_01, cidade_02, resultado_comparacao_pib);
+    printf("Pontos Turísticos: %s venceu %s (%d)\n", cidade_01, cidade_02, resultado_comparacao_pontos_turisticos);
+    printf("Densidade Populacional: %s venceu %s (%d)\n", cidade_01, cidade_02, resultado_comparacao_densidade);
+    printf("PIB per Capita: %s venceu %s (%d)\n", cidade_01, cidade_02, resultado_comparacao_pib_per_capita);
+    printf("Super Poder: %s venceu %s (%d)\n", cidade_01, cidade_02, resultado_comparacao_super_poder);
+    printf("\n\n--------------------------------------\n\n");    
     
     return 0;
 }
