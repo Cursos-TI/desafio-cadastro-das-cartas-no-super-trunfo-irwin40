@@ -62,18 +62,18 @@ int main() {
 
     // Cálculo do Super Poder 
 
-    super_poder_01 = ((float) populacao_01 + area_01 + pib_01 + (float) pontos_turisticos_01 + pib_per_capita_01 + 1/ densidade_01); // Super Poder da Carta 1
-    super_poder_02 = ((float) populacao_02 + area_02 + pib_02 + (float) pontos_turisticos_02 + pib_per_capita_02 + 1/ densidade_02); // Super Poder da Carta 2
+    super_poder_01 = ((float) populacao_01 + area_01 + pib_01 + (float) pontos_turisticos_01 + pib_per_capita_01 + 1.0/ densidade_01); // Super Poder da Carta 1
+    super_poder_02 = ((float) populacao_02 + area_02 + pib_02 + (float) pontos_turisticos_02 + pib_per_capita_02 + 1.0/ densidade_02); // Super Poder da Carta 2
 
     // Exibição dos Dados das Cartas:
     
     printf("\n-- CARTAS CADASTRADAS --\n\n- CARTA 1 -\n\n");
-    printf("Estado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: R$ %.2f\nNúmero de Pontos Turísticos: \
+    printf("Estado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %lu\nÁrea: %.2f km²\nPIB: R$ %.2f\nNúmero de Pontos Turísticos: \
 %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: R$ %.2f\nSuper Poder: %.2f\n\n--------------------------------------\n\n", estado_01, codigo_01,\
  cidade_01, populacao_01, area_01, pib_01, pontos_turisticos_01, densidade_01, pib_per_capita_01, super_poder_01);
     
     printf("- CARTA 2 -\n\n");
-    printf("Estado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: R$ %.2f\nNúmero de Pontos Turísticos: \
+    printf("Estado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %lu\nÁrea: %.2f km²\nPIB: R$ %.2f\nNúmero de Pontos Turísticos: \
 %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: R$ %.2f\nSuper Poder: %.2f\n\n--------------------------------------\n\n", estado_02, codigo_02,\
  cidade_02, populacao_02, area_02, pib_02, pontos_turisticos_02, densidade_02, pib_per_capita_02, super_poder_02);
 
